@@ -765,12 +765,10 @@ body {
     width: 200px;
     height: 50px;
     padding: 10px 26px;
-
     font-weight: inherit;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--btn-clr);
-
     background-color: var(--btn-back-clr);
     background-image: url(../images/send.svg);
     background-repeat: no-repeat;
@@ -782,7 +780,6 @@ body {
 .form-btn:hover,
 .form-btn:focus {
     background-color: var(--secondary-hover-clr);
-    /* color: var(--btn-clr); */
 }
 
 /* ---СТРАНИЦА ПОРТФОЛИО--- */
@@ -1019,6 +1016,7 @@ body {
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
+    transition: border 250ms var(--timing-function);
 }
 
 .modal-icon {
@@ -1026,6 +1024,7 @@ body {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
 }
 
 .modal-input:focus,
@@ -1054,6 +1053,7 @@ body {
     outline: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border 250ms var(--timing-function);
 }
 
 .modal-texarea::placeholder {
